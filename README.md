@@ -1,4 +1,4 @@
-# Realizing Composition and Inheritance wiht OpenAPI Generator (v.3.0.1) in Spring Boot 3 and Maven
+# Realizing Composition and Inheritance with OpenAPI Generator (v.3.0.1) in Spring Boot 3 and Maven
 _A Practical Guide_
 
 <div style="text-align: right">
