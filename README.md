@@ -1,5 +1,8 @@
 # Realizing Composition and Inheritance wiht OpenAPI Generator (v.3.0.1) in Spring Boot 3 and Maven
 _A Practical Guide_
+[![SonarQube Analysis](https://github.com/mhamp/spring-openapi-demo/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/mhamp/spring-openapi-demo/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mhamp_spring-openapi-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mhamp_spring-openapi-demo)
+
 
 by [Mathias Hamp](https://github.com/mhamp)  - Munich, June 2025
 
@@ -104,8 +107,8 @@ The Super POM centralizes dependency/plugin versions but avoids defining direct 
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>21</source>
+                    <target>21</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -494,7 +497,7 @@ OpenAPI is designed specifically to describe RESTful HTTP APIs. As such, its too
 For a complete example, see the GitHub repository.
 
 ***
-License: MIT
-Author: Mathias Hamp
+License: [MIT](LICENCE.txt)
+Author: [Mathias Hamp](https://github.com/mhamp)
 Last Updated: 2025-05-25
 ***
