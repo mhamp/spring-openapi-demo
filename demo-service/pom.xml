@@ -12,6 +12,9 @@
 
     <artifactId>demo-service</artifactId>
     <packaging>jar</packaging>
+    <properties>
+        <sonar.projectKey>mhamp_sod-demo-service</sonar.projectKey>
+    </properties>
 
     <dependencies>
         <!-- Common DTOs + utilities -->

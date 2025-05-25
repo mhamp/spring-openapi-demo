@@ -1,7 +1,9 @@
 # Realizing Composition and Inheritance wiht OpenAPI Generator (v.3.0.1) in Spring Boot 3 and Maven
 _A Practical Guide_
 
-## Introduction
+by [Mathias Hamp](https://github.com/mhamp)  - Munich, June 2025
+
+
 This guide covers advanced modeling techniques in OpenAPI with practical implementation details for Spring Boot applications, including package structures, annotations, and code generation configurations.
 
 This guide demonstrates how to:
@@ -14,7 +16,6 @@ This guide demonstrates how to:
 ## Table of Contents
 
 <!-- TOC -->
-* [Introduction](#introduction)
 * [Table of Contents](#table-of-contents)
 * [Project Structure](#project-structure)
 * [General Project Setup](#general-project-setup)

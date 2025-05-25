@@ -17,13 +17,22 @@
     <packaging>pom</packaging> <!-- !Important: needed for multi-module parent -->
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
+        <sonar.organization>mhamp</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ${project.basedir}/../report/target/site/jacoco-aggregate/jacoco.xml      <!-- don't miss the comma! -->
+            <!--            ${project.basedir}/../../module-c/target/site/jacoco-aggregate/jacoco.xml,   &lt;!&ndash; don't miss the comma! &ndash;&gt;-->
+            <!--            ${project.basedir}/../../../module-c/target/site/jacoco-aggregate/jacoco.xml &lt;!&ndash; no comma &ndash;&gt;-->
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <modules>
+        <module>report</module>
         <module>commons</module>
         <module>api-contract</module>
         <module>demo-service</module>
+        <module>report</module>
     </modules>
     <!-- Centralize dependency versions -->
     <dependencyManagement>
@@ -69,9 +78,29 @@
                         <target>${java.version}</target>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.13</version>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+            </plugin>
             <!-- Usually empty in parent; plugins defined per-module -->
         </plugins>
     </build>

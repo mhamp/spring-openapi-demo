@@ -12,7 +12,9 @@
 
     <artifactId>commons</artifactId>
     <packaging>jar</packaging>
-
+    <properties>
+        <sonar.projectKey>mhamp_sod-demo-commons</sonar.projectKey>
+    </properties>
     <dependencies>
         <!-- Depends on generated OpenAPI models -->
         <dependency>

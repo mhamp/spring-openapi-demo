@@ -13,6 +13,10 @@
     <artifactId>api-contract</artifactId>
     <packaging>jar</packaging>
 
+    <properties>
+        <sonar.projectKey>mhamp_sod-demo-api-contract</sonar.projectKey>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springdoc</groupId>
