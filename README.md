@@ -1,10 +1,8 @@
 # Realizing Composition and Inheritance with OpenAPI Generator (v.3.0.1) in Spring Boot 3 and Maven
 _A Practical Guide_
 
-<p align="right">
 [![SonarQube Analysis](https://github.com/mhamp/spring-openapi-demo/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/mhamp/spring-openapi-demo/actions/workflows/build.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mhamp_spring-openapi-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mhamp_spring-openapi-demo)
-</p>
 
 by [Mathias Hamp](https://github.com/mhamp)  - Munich, June 2025
 
