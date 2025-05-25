@@ -32,7 +32,6 @@
         <module>commons</module>
         <module>api-contract</module>
         <module>demo-service</module>
-        <module>report</module>
     </modules>
     <!-- Centralize dependency versions -->
     <dependencyManagement>
