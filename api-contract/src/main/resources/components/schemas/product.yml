@@ -1,0 +1,22 @@
+type: object
+required:
+  - id
+  - name
+  - price
+properties:
+  id:
+    type: string
+    example: "12345"
+  name:
+    type: string
+    example: "Coffee Mug"
+  description:
+    type: string
+    example: "A ceramic mug"
+  price:
+    type: number
+    format: double
+    example: 12.99
+  type:
+    type: string
+    enum: ["ELECTRONICS", "CLOTHING", "FOOD"]  # Fixed enum syntax
